@@ -1,0 +1,102 @@
+@model AsyncWebApiPerformance.Models.Dashboard
+
+<h1>My Dashboard</h1>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<h3>Time Elapsed : @Model.TimeTaken ms</h3>
+<div class="row">
+    <div class="span6">
+        <h2>Emails</h2>
+        <div style="overflow:auto; height:200px">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Emails)
+                    {
+                        <tr>
+                            <td>
+                                <div>From: @item.From</div>
+                                <div>Subject: @item.Title</div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="span6" style="overflow:auto">
+        <h2>Bookmarks</h2>
+        <div style="overflow:auto; height:200px">
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Bookmarks)
+                    {
+                        <tr>
+                            <td>
+                                <div><a href="@item.Url">@item.Url</a></div>
+                                <div>@item.Title</div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="row">
+
+    <div class="span6">
+        <h1>Notes</h1>
+        <div style="overflow:auto; height:200px">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Notes)
+                    {
+                        <tr>
+                            <td>@item.Content</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    <div class="span6" style="overflow:auto">
+        <h1>Tasks</h1>
+        <div style="overflow:auto; height:200px">
+            <table class="table">
+                <tr>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model.Tasks)
+                {
+                    <tr>
+                        <td>
+                            <div>From: @item.Starts</div>
+                            <div>To: @item.Ends</div>
+                            <div>Title: @item.Title</div>
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>
