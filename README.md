@@ -1,7 +1,7 @@
 Web API, Async and Performance
 =============================
 
-Explore how to best leverage async operations to gain performance and build a Web Application that scales better. This  **Web API, Async and Performance** in the [8th Edition of DNC Magazine](http://www.dotnetcurry.com/magazine/dnc-magazine-issue8.aspx). This magazine is absolutely free, [Subscribe Now](http://www.dotnetcurry.com/magazine).
+Explore how to best leverage async operations to gain performance and build a Web Application that scales better. This article  **Web API, Async and Performance** is in the [8th Edition of DNC Magazine](http://www.dotnetcurry.com/magazine/dnc-magazine-issue8.aspx). This magazine is absolutely free, [Subscribe Now](http://www.dotnetcurry.com/magazine).
 
 * Author: [Suprotim Agarwal](http://www.dotnetcurry.com/Author.aspx?AuthorName=Suprotim%20Agarwal)
 * Twitter: [@suprotimagarwal](http://www.twitter.com/suprotimagarwal)
