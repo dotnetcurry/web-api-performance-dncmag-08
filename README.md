@@ -8,4 +8,4 @@ Explore how to best leverage async operations to gain performance and build a We
 * Date: September, 2013
 * Version: 0.0.1
 * Website: [DNC Magazine](http://www.dncmagazine.com)
-* GitHub: [DNC Magazine on Github](https://github.com/dotnetcurry/exploring-glimpse-dncmag-07)
+* GitHub: [DNC Magazine on Github](https://github.com/dotnetcurry/web-api-performance-dncmag-08)
